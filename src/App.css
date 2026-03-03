@@ -12,8 +12,13 @@
   padding: 0.25rem;
 }
 
+.main-container {
+  position: relative;
+}
+
 .structure {
   position: relative;
+  padding-top: 3rem;
 }
 
 .divider {
@@ -22,4 +27,33 @@
   background-color: gray;
   width: 1px;
   height: 100%;
+}
+
+/** for user slots **/
+.user-schedule {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.user {
+  position: relative;
+}
+
+.seperater {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: gray;
+}
+
+.slot {
+  position: absolute;
+  background-color: lightblue;
+  border: 1px solid blue;
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import Schedular from "./Schedular";
+import { USERS } from "../utils/constants";
 
 const Body = () => {
   return (
     <div>
-      <Schedular />
+      <Schedular users={USERS} />
     </div>
   );
 };
