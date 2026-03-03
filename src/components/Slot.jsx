@@ -3,10 +3,10 @@ import React from "react";
 const Slot = ({ slot }) => {
   const { start, end } = slot;
 
-  const startHour = start.split(":")[0];
-  const startMinute = start.split(":")[1];
-  const endHour = end.split(":")[0];
-  const endMinute = end.split(":")[1];
+  const startHour = +start.split(":")[0];
+  const startMinute = +start.split(":")[1];
+  const endHour = +end.split(":")[0];
+  const endMinute = +end.split(":")[1];
   const duration = endHour - startHour + (endMinute - startMinute) / 60;
 
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import CalendarStructure from "./CalendarStructure";
 import UserSchedule from "./UserSchedule";
 
-const Schedular = ({ users }) => {
+const Schedular = ({ users = [] }) => {
   return (
     <div className="main-container">
       <CalendarStructure />
