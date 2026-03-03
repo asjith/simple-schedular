@@ -1,4 +1,25 @@
 * {
   font-family: sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hour {
+  border-bottom: 1px solid gray;
+  color: gray;
+  height: 4rem;
+  padding: 0.25rem;
+}
+
+.structure {
+  position: relative;
+}
+
+.divider {
+  position: absolute;
+  left: 4rem;
+  background-color: gray;
+  width: 1px;
+  height: 100%;
 }
