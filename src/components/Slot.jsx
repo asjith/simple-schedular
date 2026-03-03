@@ -8,7 +8,8 @@ const Slot = ({ slot }) => {
   const endHour = +end.split(":")[0];
   const endMinute = +end.split(":")[1];
 
-  if (endHour < startHour) return null;
+  if (endHour < startHour || (endHour === startHour && endMinute < startMinute))
+    return null;
 
   const duration = endHour - startHour + (endMinute - startMinute) / 60;
 
